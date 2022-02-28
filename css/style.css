@@ -1,0 +1,1770 @@
+/* ==========
+Global Style
+========== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    transition: all 0.2s linear;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Brasley-Regular;
+}
+
+/* ==========
+Typography
+========== */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 2.188rem;
+    font-weight: 750;
+    text-decoration: none;
+    border: 5px solid transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+    text-shadow: rgba(239, 178, 101, 1) 0px 0 10px;
+    padding: 0 100px;
+    color: #c19d53;
+    opacity: 50%;
+}
+
+nav a:hover {
+    opacity: 100%;
+}
+
+
+/* ==========
+Layout Background
+========== */
+
+
+header {
+    position: relative;
+    color: white;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+header img {
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+    padding: 200px 50px 450px 50px;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+}
+
+nav {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.backgrounds {
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 0.2px;
+    overflow: hidden;
+}
+
+.background {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+
+.background h2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.scroll {
+    position: absolute;
+    color: white;
+}
+
+.one {
+    background-image: url("../img/elden-ring-horse-jump.jpg")
+}
+.two {
+    background-image: url("../img/elden-ring-cave.jpg")
+}
+.three {
+    background-image: url("../img/elden-ring-woman.jpg")
+}
+.four {
+    background-image: url("../img/elden-ring-castle.jpg");
+}
+.five {
+    background-image: url("../img/demons-souls-keyart.jpg");
+}
+.six {
+    background-image: url("../img/dark-souls-trilogy-art.jpg");
+}
+.seven {
+    background-image: url("../img/bloodborne-key-art.jpg");
+}
+.eight {
+    background-image: url("../img/sekiro-art.jpg");
+}
+
+.nine {
+    background-image: url("../img/elden-ring-painting.jpg");
+}
+
+.ten {
+    background-image: url("../img/elden-ring-tree.jpg");
+}
+
+/* ==========
+Modals
+========== */
+
+.modal-item {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:rgba(255,255,255,0.4);
+    z-index: 99998;
+    opacity: 0;/**/
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal-item:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-item > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+    top: 0.5%;
+}
+
+.fermer-item {
+    position: absolute;
+    top: 10px;
+    right: 7%;
+    z-index: 99999;
+}
+    
+.fermer-item i{
+    color:#e74c3c;
+}
+
+.video-responsive { 
+    overflow: hidden; 
+    padding-bottom: 56.25%; 
+    position: relative; 
+    height: 0;
+}
+    
+.video-responsive iframe {
+    left: 0; 
+    top: 0; 
+    height: 90%;
+    width: 90%;
+    position: absolute;
+}
+
+/* ==========
+Layout Index
+========== */
+
+.scroll h1 {
+    margin-bottom: 10%;
+    background-color: rgba(193, 157, 83, 0.8);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.ervideo {
+    margin: 12% 0 12% 45%;
+    border:rgba(193, 157, 83, 0.5) solid 5px;
+    border-radius: 5px;
+}
+
+.ervideo:hover {
+    background-color: rgba(193, 157, 83, 1);
+}
+
+.erblock {
+    position: relative;
+}
+
+.er1 {
+    /* margin: 12% 60% 20% 10%; */
+    left: 10%;
+    top: 22.7%;
+}
+
+.er1 h1 {
+    width: 23ch;
+}
+
+.er1 p {
+    width: 53ch;
+    margin-bottom: 3%;
+}
+
+.erimg2 {
+    width: 85%;
+    left: 5%;
+    top: 3.7%;
+}
+
+.er2 {
+    right: 10%;
+    top: 9.4%;
+    margin-left: 60%;
+}
+
+.erimg2-1 {
+    bottom: 3.9%;
+    right: 10%;
+    margin-left: 55%;
+}
+
+.er2-1 {
+    margin-right: 60%;
+    bottom: 7.9%;
+    left: 10%;
+}
+
+.erimg3 {
+    /* margin: 15% 0 15% 50%; */
+    bottom: 21.6%;
+    margin-left: 50%;
+}
+
+.er3 {
+    /* margin: 10% 60% 10% 10% */
+    bottom: 9.1%;
+    margin-right: 60%;
+    left: 10%;
+}
+
+.er3 p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.er4 {
+    margin: 2.5% 20%;
+    text-align: center;
+}
+
+.er4 h1 {
+    margin-bottom: 3%;
+}
+
+.erimg4 {
+    margin: 0 15%;
+    position: absolute;
+    bottom: 17.4%;
+}
+
+.erimg4-1 {
+    margin: 0 15%;
+    position: absolute;
+    bottom: 63.1%;
+}
+
+.erimg4-2 {
+    display: flex;
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    left: 7%;
+}
+
+.erimg4-2 img {
+    margin: 0 15px;
+    border:rgba(193, 157, 83, 0.5) solid 5px;
+    border-radius: 5px;
+    width: 95%;
+}
+
+/* ==========
+Layout Autres Jeux
+========== */
+
+.ajblock {
+    position: relative;
+}
+
+.demonsvideo {
+    margin: 12% 0 12% 45%;
+    border:rgba(193, 157, 83, 0.5) solid 5px;
+    border-radius: 5px;
+}
+
+.demonsvideo:hover {
+    background-color: rgba(193, 157, 83, 1);
+}
+
+.demonslogo {
+    margin: -28% 10% 0% 5%;
+    filter: invert(1);
+}
+
+.demonstext {
+    margin-right: 50%;
+    padding: 22% 10%;
+}
+
+.demonstext p {
+    margin-bottom: 3%;
+}
+
+.darkvideo {
+    margin: 20% 0 12% 45%;
+    border:rgba(193, 157, 83, 0.5) solid 5px;
+    border-radius: 5px;
+}
+
+.darkvideo:hover {
+    background-color: rgba(193, 157, 83, 1);
+}
+
+.darklogo {
+    margin: 3% 10% 0% 58%;
+}
+
+.darktext {
+    margin-right: 50%;
+    padding: 5% 10%;
+}
+
+.darktext-1 {
+    margin-right: 50%;
+    padding: 28% 10%;
+}
+
+.bloodbornevideo {
+    margin: 12% 0 12% 45%;
+    border:rgba(193, 157, 83, 0.5) solid 5px;
+    border-radius: 5px;
+}
+
+.bloodbornevideo:hover {
+    background-color: rgba(193, 157, 83, 1);
+}
+
+.bloodbornelogo {
+    margin: -28% 0 15% 4.5%;
+    overflow: hidden;
+}
+
+.bloodbornetxt {
+    margin-right: 50%;
+    padding: 21% 10%;
+}
+
+.bloodbornetxt p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sekirovideo {
+    margin: 12% 0 12% 45%;
+    border:rgba(193, 157, 83, 0.5) solid 5px;
+    border-radius: 5px;
+}
+
+.sekirovideo:hover {
+    background-color: rgba(193, 157, 83, 1);
+}
+
+.sekirologo {
+    margin: 8% 15%;
+}
+
+.sekirotext {
+    margin-right: 50%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding: 0 10%;
+}
+
+
+/* ==========
+Layout Videos
+========== */
+
+.gametitle {
+    background-color: rgba(193, 157, 83, 0.8);
+    padding: 1%;
+    border-radius: 10px;
+    margin: 0 20%;
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.videos-block {
+    position: relative;
+}
+
+.videosresponsive { 
+    overflow: hidden; 
+    padding-bottom: 56.25%; 
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+}
+    
+.videosresponsive iframe {
+    left: 12.5%; 
+    top: 12%; 
+    height: 75%;
+    width: 75%;
+    position: absolute;
+}
+
+
+/* ==========
+Layout Images
+========== */
+
+.erleaftop {
+    margin: 10% 15%;
+}
+
+.erleafbottom {
+    margin: 39% 15%;
+}
+
+.erimg {
+    display: flex;
+    margin: 17% 3% 0% 0%;
+}
+
+.erimg img {
+    margin: 0 35px;
+    border:rgba(193, 157, 83, 0.5) solid 5px;
+    border-radius: 5px;
+    width: 95%;
+}
+
+
+
+/* ==========
+Footer
+========== */
+
+footer {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.platforms {
+    position : absolute;
+    bottom: 10%;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.platforms img {
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    border: black solid 2px;
+    border-radius: 5px;
+    filter: invert(1);
+    height: 35px;
+}
+
+footer a {
+    overflow: hidden;
+    position : absolute;
+    bottom: 10%;
+    z-index: 1;
+    margin-left: 95%;
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+/* ==========
+Media Queries Index
+========== */
+
+@media (min-width: 1600px){
+    .background {
+        height: 1000px;
+    }
+
+    .sizing {
+        height: 900px;
+    }
+
+    .ervideo {
+        bottom: 0%
+    }
+
+    .five, .seven, .eight {
+        height: 900px
+    }
+
+    .demonsvideo, .bloodbornevideo, .sekirovideo {
+        bottom: 0%;
+    }
+
+    .demonslogo {
+        margin: -28% 10% 0% 5%;
+    }
+    
+    .demonstext {
+        padding: 17% 10%;
+    }
+
+    .videosbg {
+        height: 900px;
+    }
+
+    .erleaftop {
+        margin: 10% 15%;
+    }
+    
+    .erleafbottom {
+        margin: 39% 15%;
+    }
+
+    .bgimages {
+        height: 900px;
+    }
+
+    .er3 {
+        bottom: 9.1%;
+        margin-right: 56%;
+        left: 10%;
+    }
+    
+    .er3 p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    } 
+    .er1 {
+        left: 7%;
+        top: 21%;
+    }
+    .modal-item > div {
+        top: 2.5%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .videosbg {
+        height: 1000px;
+    }
+
+    .ervideo {
+        bottom: -6.5%;
+    }
+
+    .erleaftop {
+        margin: 10% 30%;
+    }
+    
+    .erleafbottom {
+        margin: 39% 30%;
+    }
+    .bgimages {
+        height: 1000px;
+    }
+
+    .sekirologo {
+        margin: 5% 15%;
+    }
+    
+    .sekirotext {
+        margin-top: 15%;
+    }
+    .sekirovideo {
+        bottom: -8%;
+    }
+    .er1 {
+        top: 20%;
+    }
+    .modal-item > div {
+        top: 0.5%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .background {
+        height: 1150px;
+    }
+    .sizing {
+        height: 1000px;
+    }
+    .five, .seven, .eight {
+        height: 1000px
+    }
+    .demonsvideo, .bloodbornevideo, .sekirovideo {
+        bottom: -15%;
+    }
+    .bgimages {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .background {
+        height: 1250px;
+    }
+    .sizing {
+        height: 1000px;
+    }
+    .five, .seven, .eight {
+        height: 1000px
+    }
+    .bgimages {
+        height: 1050px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .background {
+        height: 1300px;
+    }
+    .sizing {
+        height: 1000px;
+    }
+    .ervideo {
+        bottom: -20%;
+    }
+    .five, .seven, .eight {
+        height: 1000px
+    }
+    .bgimages {
+        height: 1100px;
+    }
+    
+}
+
+@media (min-width: 2600px) {
+    .background {
+        height: 1400px;
+    }
+    .sizing {
+        height: 1000px;
+    }
+    .five, .seven, .eight {
+        height: 1300px
+    }
+    .demonsvideo, .bloodbornevideo, .sekirovideo {
+        bottom: -5%;
+    }
+    .bgimages {
+        height: 1200px;
+    }
+}
+
+@media (min-width: 2700px) {
+    .background {
+        height: 1400px;
+    }
+    .sizing {
+        height: 1000px;
+    }
+    .five, .seven, .eight {
+        height: 1300px
+    }
+    .bgimages {
+        height: 1200px;
+    }
+
+}
+
+@media (min-width: 2800px) {
+    .background {
+        height: 1500px;
+    }
+    .sizing {
+        height: 1000px;
+    }
+    .ervideo {
+        bottom: -20%;
+    }
+    .five, .seven, .eight {
+        height: 1300px
+    }
+    .bgimages {
+        height: 1300px;
+    }
+}
+
+@media (min-width: 2900px) {
+    .background {
+        height: 1600px;
+    }
+    .sizing {
+        height: 1000px;
+    }
+    .five, .seven, .eight {
+        height: 1300px
+    }
+    .bgimages {
+        height: 1300px;
+    }
+}
+
+@media (min-width: 3000px) {
+    .background {
+        height: 1750px;
+    }
+    .sizing {
+        height: 1150px;
+    }
+    .demonsvideo, .bloodbornevideo, .sekirovideo {
+        bottom: -15%;
+    }
+    .five, .seven, .eight {
+        height: 1300px
+    }
+    .bgimages {
+        height: 1450px;
+    }
+}
+
+@media (min-width: 3500px) {
+    .background {
+        height: 2000px;
+    }
+    .sizing {
+        height: 1250px;
+    }
+    .five, .seven, .eight {
+        height: 1350px
+    }
+    .bgimages {
+        height: 1800px;
+    }
+}
+
+@media (max-width: 1550px) {
+
+    nav a {
+        display: inline-block;
+        font-size: 2rem;
+        padding: 10px 60px;
+    }
+
+    p {
+        font-size: 1rem;
+        width: 45ch;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 21ch;
+    }
+
+    .ervideo {
+        bottom: -10%;
+        right: 20%;
+        width: 60%;
+    }
+    
+    .er1 {
+        left: 13%;
+        top: 5%;
+    }
+    
+    .er1 h1 {
+        width: 53ch;
+        margin-bottom: 5%;
+    }
+    
+    .er1 p {
+        width: 110ch;
+        margin-bottom: 3%;
+    }
+    
+    .erimg2 {
+        width: 95%;
+        left: 3%;
+        top: 8%;
+    }
+    
+    .er2 {
+        top: 10%;
+        right: 0;
+        margin-left: 0;
+        left: 60%;
+    }
+
+    .er2 p{
+        width: 50ch;
+    }
+
+    .er2 h1, .er2-1 h1  {
+        margin-bottom: 5%;
+        width: 24ch;
+    }
+    
+    .erimg2-1 {
+        bottom: 10%;
+        left: 55%;
+        margin-left: 0%;
+        width: 38%
+    }
+
+    .er2-1 p {
+        width: 50ch;
+    }
+    
+    .er2-1 {
+        bottom: 10%;
+        left: 10%;
+    }
+    
+    .erimg3 {
+        bottom: 3%;
+        margin-left: 27.5%;
+        width: 50%;
+    }
+    
+    .er3 {
+        bottom: 40%;
+        left: 10%;
+    }
+    
+    .er3 p {
+        width: 110ch;
+    }
+
+    .er3 h1 {
+        width: 53ch;
+        margin-bottom: 8%;
+    }
+    
+    .er4 {
+        margin: 0;
+        left: 34%;
+        top: 3%;
+        text-align: center;
+    }
+    
+    .er4 h1 {
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    
+    .erimg4 {
+        margin: 0 15%;
+        position: absolute;
+        bottom: 10%;
+    }
+    
+    .erimg4-1 {
+        margin: 0 15%;
+        position: absolute;
+        bottom: 70%;
+    }
+    
+    .erimg4-2 {
+        position: absolute;
+        bottom: 30%;
+        right: 5%;
+        left: 3%;
+        width: 90%;
+    }
+
+    .erimg4-2 img {
+        margin-bottom: 1%;
+    }
+
+    .platforms {
+        bottom: 10%;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .platforms img {
+        height: 30px;
+        margin-left: 5px;
+    }
+    
+    footer a {
+        margin-left: 93%;
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    nav a {
+        display: inline-block;
+        font-size: 1.80rem;
+        padding: 10px 40px;
+    }
+
+    .ervideo {
+        bottom: -5%;
+        right: 15%;
+        width: 70%;
+    }
+    
+    .er1 h1 {
+        width: 42ch;
+    }
+    
+    .er1 p {
+        width: 90ch;
+        margin-bottom: 3%;
+    }
+    
+    .erimg2 {
+        width: 100%;
+    }
+
+    .er2 p, .er2-1 p {
+        width: 35ch;
+    }
+    .er2 h1{
+        width: 17ch;
+    }
+
+    .er2-1 h1 {
+        width: 20ch;
+    }
+    
+    .erimg2-1 {
+        bottom: 10%;
+        left: 45%;
+        margin-left: 0%;
+        width: 45%
+    }
+    
+    .er2-1 {
+        bottom: 8%;
+        left: 7%;
+    }
+    
+    .erimg3 {
+        bottom: 1%;
+        margin-left: 22%;
+        width: 60%;
+    }
+    
+    .er3 {
+        bottom: 40%;
+        left: 12%;
+    }
+    
+    .er3 p {
+        width: 95ch;
+    }
+
+    .er3 h1 {
+        width: 44ch;
+        margin-bottom: 8%;
+    }
+    
+    .er4 {
+        margin: 0;
+        left: 32%;
+        top: 3%;
+        text-align: center;
+    }
+    
+    .er4 p {
+        width: 41ch;
+        margin-left: 3%;
+    }
+    
+    .erimg4-2 {
+        display: grid;
+        position: absolute;
+        bottom: 15%;
+        right: 5%;
+        left: 35%;
+        width: 75%;
+    }
+
+    .erimg4-2 img {
+        margin-bottom: 1%;
+        width: 32%;
+    }
+    
+    .platforms img {
+        height: 20px;
+        margin-left: 5px;
+    }
+    
+    footer a {
+        margin-left: 85%;
+    }
+}
+
+
+
+
+
+@media (max-width: 992px) {
+
+    nav a {
+        display: inline-block;
+        font-size: 1.75rem;
+        padding: 10px 30px;
+    }
+
+    .ervideo {
+        bottom: -5%;
+        right: 10%;
+        width: 80%;
+    }
+    
+    .er1 {
+        left: 10%;
+        top: 5%;
+    }
+    
+    .er1 p {
+        width: 80%;
+    }
+
+    .er1 h1 {
+        margin-bottom: 8%;
+        width: 80%;
+    }
+    
+    .erimg2 {
+        width: 95%;
+        left: 3%;
+        top: 13%;
+    }
+    
+    .er2 {
+        top: 15%;
+        right: 0;
+        margin-left: 0;
+        left: 60%;
+    }
+
+    .er2 p {
+        width: 80%;
+    }
+
+    .er2-1 p{
+        width: 80%;
+    }
+
+    .er2 h1{
+        width: 17ch;
+        font-size: 150%;
+    }
+
+    .er2-1 h1 {
+        width: 20ch;
+        font-size: 150%;
+    }
+
+    .er2 h1, .er2-1 h1  {
+        margin-bottom: 5%;
+    }
+    
+    .erimg2-1 {
+        bottom: 13%;
+        left:47%;
+        margin-left: 0%;
+        width: 45%
+    }
+    
+    .er2-1 {
+        bottom: 8%;
+        left: 5%;
+    }
+    
+    .erimg3 {
+        bottom: 1%;
+        margin-left: 17%;
+        width: 70%;
+    }
+    
+    .er3 {
+        bottom: 40%;
+        left: 10%;
+    }
+
+    .er3 p {
+        width: 260%;
+    }
+
+    .er3 h1 {
+        width: 260%;
+        margin-bottom: 5%;
+        font-size: 180%;
+    }
+    
+    .er4 {
+        margin: 0;
+        left: 13%;
+        top: 5%;
+        text-align: center;
+    }
+    
+    .er4 p {
+        width: 80%;
+        margin-left: 1.5%;
+    }
+    
+    .er4 h1 {
+        width: 80%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+
+    .erimg4-2 {
+        display: grid;
+        position: absolute;
+        bottom: 15%;
+        right: 5%;
+        left: 33%;
+        width: 92%;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    nav a {
+        padding: 10px 70px;
+    }
+    
+    .er1 p {
+        width: 80%;
+    }
+
+    .er1 h1 {
+        width: 80%;
+    }
+
+    .erimg2 {
+        width: 95%;
+        left: 3%;
+        top: 5%;
+    }
+    
+    .er2 {
+        top: 5%;
+        right: 0;
+        margin-left: 0;
+        left: 60%;
+    }
+
+    .er2 p {
+        width: 80%;
+    }
+
+    .er2-1 p{
+        width: 100%;
+    }
+
+    .er2 h1{
+        width: 17ch;
+        font-size: 110%;
+    }
+
+    .er2-1 h1 {
+        width: 110%;
+        font-size: 110%;
+    }
+    
+    .er2-1 {
+        bottom: 8%;
+        left: 5%;
+    }
+    
+    .er3 {
+        bottom: 25%;
+        left: 10%;
+    }
+
+    .er3 p {
+        width: 260%;
+    }
+
+    .er3 h1 {
+        width: 260%;
+    }
+
+    .er4 {
+        left: 18%;
+    }
+    
+    .er4 p {
+        width: 80%;
+        margin-left: 0;
+    }
+    
+    .er4 h1 {
+        width: 80%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+
+    .erimg4 {
+        margin: 0 15%;
+        position: absolute;
+        bottom: 10%;
+    }
+    
+    .erimg4-1 {
+        margin: 0 15%;
+        position: absolute;
+        bottom: 65%;
+    }
+
+    .erimg4-2 {
+        display: grid;
+        position: absolute;
+        bottom: 15%;
+        right: 5%;
+        left: 23%;
+        width: 140%;
+    }
+
+}
+
+
+
+/* ==========
+Media Queries Autres Jeux
+========== */
+
+
+
+@media (max-width: 1200px) {
+    .demonsvideo {
+        bottom: -5%;
+        right: 25%;
+        width: 50%;
+    }
+    
+    .demonslogo {
+        margin: -25% 5% 0% 25%;
+    }
+    
+    .demonstext {
+        margin: 20% 60% 35% 15%;
+        padding: 0;
+    }
+    
+    .demonstext p {
+        margin-bottom: 3%;
+        width: 75ch;
+    }
+
+    .demonstext h1 {
+        width: 36ch;
+    }
+
+    .dsbg{
+        height: 1250px;
+    }
+    
+    .darkvideo {
+        bottom: -5%;
+        right: 25%;
+        width: 50%;
+    }
+    
+    .darklogo {
+        margin: -5% 30% 0% 32.5%;
+    }
+    
+    .darktext p, .darktext-1 p {
+        width: 75ch;
+    }
+
+    .darktext h1, .darktext-1 h1 {
+        width: 36ch;
+        margin-bottom: 5%;
+    }
+
+    .darktext {
+        margin: 15% 60% 35% 15%;
+        padding: 0;
+    }
+    
+    .darktext-1 {
+        margin: 45% 60% 35% 15%;
+        padding: 0;
+    }
+    
+    .bloodbornevideo {
+        bottom: -5%;
+        right: 22%;
+        width: 55%;
+    }
+    
+    .bloodbornelogo {
+        margin: -20% 0 10% 25%;
+        overflow: hidden;
+    }
+    
+    .bloodbornetxt {
+        margin: 20% 60% 35% 15%;
+        padding: 0;
+    }
+
+    .bloodbornetxt p {
+        width: 75ch;
+    }
+
+    .bloodbornetxt h1 {
+        width: 36ch;
+    }
+    
+    .sekirovideo {
+        bottom: -5%;
+        right: 23%;
+        width: 55%;
+    }
+    
+    .sekirologo {
+        margin: 5% 10% 0 32%;
+    }
+    
+    .sekirotext {
+        margin: 18% 60% 20% 15%;
+        padding: 0;
+    }
+
+    .sekirotext p {
+        width: 76ch;
+    }
+
+    .sekirotext h1 {
+        width: 36ch;
+    }
+}
+
+
+
+
+
+@media (max-width: 992px) {
+
+    .demonsvideo {
+        bottom: -5%;
+        right: 20%;
+        width: 60%;
+    }
+    
+    .darkvideo {
+        bottom: -5%;
+        right: 17.5%;
+        width: 65%;
+    }
+    
+    .bloodbornevideo {
+        bottom: -5%;
+        right: 17.5%;
+        width: 65%;
+    }
+    
+    .sekirovideo {
+        bottom: -5%;
+        right: 17.5%;
+        width: 65%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .demonslogo {
+        margin: -45% -15% 0% 15%;
+    }
+    
+    .demonstext {
+        margin: 40% 60% 35% 15%;
+        padding: 0;
+    }
+    
+    .demonstext p {
+        margin-bottom: 3%;
+        width: 36ch;
+    }
+
+    .demonstext h1 {
+        width: 18ch;
+    }
+
+    .darklogo {
+        margin: -5% 30% 0% 28%;
+    }
+        
+    .darktext p, .darktext-1 p {
+        width: 36ch;
+    }
+
+    .darktext h1, .darktext-1 h1 {
+        width: 18ch;
+        margin-bottom: 5%;
+    }
+
+    .darktext {
+        margin: 30% 60% 35% 15%;
+        padding: 0;
+    }
+    
+    .darktext-1 {
+        margin: 100% 60% 35% 15%;
+        padding: 0;
+    }
+
+    .darkvideo {
+        bottom: 0%;
+        right: 17.5%;
+        width: 65%;
+    }
+
+    .bloodbornelogo {
+        margin: -30% -20% 10% 17%;
+        overflow: hidden;
+    }
+        
+    .bloodbornetxt {
+        margin: 30% 60% 35% 15%;
+        padding: 0;
+    }
+
+    .bloodbornetxt p {
+        width: 36ch;
+    }
+
+    .bloodbornetxt h1 {
+        width: 18ch;
+    }
+
+    .sekirologo {
+        margin: 15% 10% 0 29%;
+    }
+        
+    .sekirotext {
+        margin: 34% 60% 20% 15%;
+        padding: 0;
+    }
+
+    .sekirotext p {
+        width: 36ch;
+    }
+
+    .sekirotext h1 {
+        width: 18ch;
+    }
+}
+
+
+
+
+/* ==========
+Media Queries Videos
+========== */
+
+@media (max-width: 1550px) {
+    .videosbg {
+        height: 800px;
+    }
+    .gametitle {
+        font-size: 1.6rem;
+    }
+    .videosresponsive iframe {
+        left: 12.5%; 
+        top: 12%; 
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .videosbg {
+        height: 600px;
+    }
+    .gametitle {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .videosbg {
+        height: 550px;
+    }
+    .gametitle {
+        font-size: 1.2rem;
+    }
+    .videosresponsive iframe { 
+        top: 20%; 
+    }
+}
+
+@media (max-width: 930px) {
+    .videosbg {
+        height: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    .videosbg {
+        height: 450px;
+    }
+    .gametitle {
+        font-size: 1.0rem;
+    }
+    .videosresponsive iframe { 
+        top: 20%; 
+    }
+}
+
+@media (max-width: 750px) {
+    .videosbg {
+        height: 400px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .videosbg {
+        height: 370px;
+    }
+            
+    .videosresponsive iframe { 
+        top: 35%; 
+    }
+    .videosresponsive { 
+        overflow:visible;
+    }
+}
+
+@media (max-width: 550px) {
+    .videosbg {
+        height: 350px;
+    }
+
+    .gametitle {
+        margin-top: 4%;
+    }
+            
+    .videosresponsive iframe { 
+        top: 35%; 
+    }
+    .videosresponsive { 
+        overflow:visible;
+    }
+}
+
+
+
+
+
+/* ==========
+Media Queries Images
+========== */
+
+
+
+@media (max-width: 1550px) {
+
+    .erleaftop {
+        margin: 12% 15%;
+    }
+    
+    .erleafbottom {
+        margin: 55% 15%;
+    }
+
+    .erimg {
+        margin: 27% 0% 0% 5%;
+        width: 90%;
+    }
+
+    .erimg img {
+        margin: 0 0.5%;
+    }
+
+    .platforms {
+        bottom: 10%;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    .erleaftop {
+        margin: 6% 15%;
+    }
+    
+    .erleafbottom {
+        margin: 80% 15%;
+    }
+
+    .erimg {
+        display: grid;
+        margin: 9% 0% 0% 0%;
+    }
+
+    .erimg img {
+        margin: 2% 0 2% 38%;
+        width: 35%;
+    }
+
+    .platforms {
+        bottom: 10%;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    .bgimages {
+        height: 1000px;
+    }
+}
+
+
+
+
+
+@media (max-width: 992px) {
+
+    .erleaftop {
+        margin: 8% 15%;
+    }
+    
+    .erleafbottom {
+        margin: 95% 15%;
+    }
+
+    .erimg {
+        display: grid;
+        margin: 13% 0% 0% 0%;
+    }
+
+    .erimg img {
+        margin: 2% 0 2% 35%;
+        width: 40%;
+    }
+
+    .platforms {
+        bottom: 10%;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .bgimages {
+        height: 1000px;
+    }
+}
+
+
+
+@media (max-width: 930px) {
+    .bgimages {
+        height: 950px;
+    }
+}
+
+@media (max-width: 800px) {
+    .bgimages {
+        height: 800px;
+    }
+}
+
+@media (max-width: 750px) {
+    .bgimages {
+        height: 750px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .bgimages {
+        height: 600px;
+    }
+}
+
+@media (max-width: 550px) {
+    .bgimages {
+        height: 550px;
+    }
+}
